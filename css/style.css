@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Quicksand", sans-serif;
+}
+.first{
+  background-image: url(../home_bg.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  position: relative;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.content .logo{
+  width: 5%;
+  margin-left: 5%;
+}
+
+.content .logo img{
+  width: 100%;
+}
+
+.content ul {
+  display: flex;
+  list-style: none;
+  margin-right: 5%;
+}
+.content ul li {
+  margin: 20px;
+}
+.content ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  position: relative;
+  
+  padding: 0 18px;
+}
+
+.content ul li a::after{
+  content: "";
+  width: 0%;
+  height: 3px;
+  bottom: -10px;
+  left: 0;
+  background-color: #E5BA5B;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.content ul li a:hover::after{
+  width: 100%;
+}
+
+.words{
+  text-align: center;
+  margin: 20% 0;
+}
+
+.words p{
+  margin: 20px 0;
+  font-size: 20px;
+}
+.words h1{
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.words h1 span{
+  color: #E5BA5B;
+}
+
+.words .btn button{
+  padding: 10px 20px;
+  background: transparent;
+  border: 1px solid white;
+  font-size: 15px;
+  color: white;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.words .btn button:hover{
+  background-color: white;
+  color: black;
+  transform: scale(1.1 , 1.1);
+  cursor: pointer;
+}
+
+/* the second section */
+.second{
+  width: 70%;
+  margin: 20% auto;
+}
+.second .head{
+  text-align: center;
+}
+
+.second .head h1{
+  font-size: 2.5rem;
+  color: #353546;
+  text-transform: capitalize;
+}
+.second .head p{
+  color: #9D9EAB;
+  margin-top: 10px;
+}
+
+.second .des .word p{
+  width: 85%;
+  color: #9D9EAB;
+  font-size: 20px;
+}
+
+.second .des{
+  margin-top: 100px;
+  display: flex;
+}
+.second .des button{
+  padding: 15px 25px;
+  background-color: #353546;
+  margin-top: 20px;
+  color: white;
+  border: 1px solid #353546;
+  border-radius: 13px;
+  font-size: 15px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.second .des button:hover{
+  background-color: transparent;
+  color: #353546;
+  cursor: pointer; 
+  transform: scale(1.1 , 1.1);
+}
+
+.third{
+  width: 100%;
+  background-image: url(../offer-background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content-1{
+  width: 90%;
+  color: white;
+  margin: 0 auto;
+}
+
+.content-1 .head-food{
+  text-align: center;
+  line-height: 50px;
+}
+.content-1 .head-food h1{
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: #E5BA5B;
+}
+
+.food-img{
+  width: 10%;
+  margin: 0 auto;
+}
+
+.food-img img{
+  width: 150px;
+  margin: 20px 0;
+}
+
+.food-des{
+  line-height: 50px;  
+  text-align: center;
+}
+.food-des h1{
+  text-transform: capitalize;
+}
+
+.food-des .p2{
+  color: #E5BA5B;
+}
+
+.food-des .p2 sub{
+  text-decoration: line-through;
+  color: white;
+}
